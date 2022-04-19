@@ -1,0 +1,64 @@
+<div class="container">
+  <form [formGroup]="createCarForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Title</label>
+      <input formControlName="title" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Adresse</label>
+      <input formControlName="address" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <div class="form-group">
+      <label for="brand">Brand</label>
+      <input formControlName="brand" class="form-control" id="brand" placeholder="Password">
+    </div>
+    <div class="form-group">
+      <label for="model">model</label>
+      <input formControlName="model" class="form-control" id="model" placeholder="Password">
+    </div>
+    <div class="form-group">
+      <label for="model_year">model_year</label>
+      <input formControlName="model_year" class="form-control" id="model_year" placeholder="Password">
+    </div>
+    <div class="form-group">
+      <label for="issuance">issuance</label>
+      <input formControlName="issuance" class="form-control" id="issuance" placeholder="Password">
+    </div>
+    <div class="form-group">
+      <label for="mileage">mileage</label>
+      <input formControlName="mileage" class="form-control" id="mileage" placeholder="Password">
+    </div>
+    <div class="form-group">
+      <label for="fuel">fuel</label>
+      <input formControlName="fuel" class="form-control" id="fuel" placeholder="Password">
+    </div>
+    <div class="form-group">
+      <label for="color">color</label>
+      <input formControlName="color" class="form-control" id="color" placeholder="Password">
+    </div>
+    <div class="form-group">
+      <label for="numbers_doors">numbers_doors</label>
+      <input formControlName="numbers_doors" class="form-control" id="numbers_doors" placeholder="Password">
+    </div>
+    <div class="form-group">
+      <label for="horse_power">horse_power</label>
+      <input formControlName="horse_power" class="form-control" id="horse_power" placeholder="Password">
+    </div>
+    <div class="form-group">
+      <label for="price">price</label>
+      <input formControlName="price" class="form-control" id="price" placeholder="Password">
+    </div>
+    <div class="form-group">
+      <label for="price">pictures</label>
+      <input formControlName="pictures" class="form-control" id="pictures" placeholder="Password">
+    </div>
+
+
+    <div class="form-check">
+      <input formControlName="sold" type="checkbox" class="form-check-input" id="exampleCheck1">
+      <label class="form-check-label" for="exampleCheck1">sold</label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+

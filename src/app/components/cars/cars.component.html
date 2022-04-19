@@ -1,0 +1,17 @@
+<div *ngFor="let car of cars" class="card" style="width: 18rem;">
+  <img class="card-img-top" src="..." alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{car.title}}</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">{{car.address}}</li>
+    <li class="list-group-item">{{car.brand}}</li>
+    <li class="list-group-item">{{car.model}}</li>
+    <li class="list-group-item">{{car.model_year}}</li>
+  </ul>
+  <div class="card-body">
+    <a href="#" class="card-link" [routerLink]="['/car-details', car.id]">Car details</a>
+    <button *ngIf="car.id" type="button" class="btn btn-danger" (click)="deleteCar(car.id)">Danger</button>
+  </div>
+</div>
