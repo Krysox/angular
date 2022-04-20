@@ -60,26 +60,6 @@
       "sold": false
     },
     {
-      "id": 4,
-      "title": "Volkswagen T-Roc 1.5 TSI DSG United",
-      "address": "Marseille",
-      "brand": "Volkswagen",
-      "model": "T-Roc",
-      "model_year": 2020,
-      "issuance": "01/11/2020",
-      "mileage": 15000,
-      "fuel": "petrol",
-      "color": "blue",
-      "numbers_doors": 5,
-      "horse_power": 150,
-      "price": 27999,
-      "pictures": [
-        "https://img.leboncoin.fr/api/v1/lbcpb1/images/ef/de/6e/efde6eba0fb1072d0401f12c6c119ed65cc4ea66.jpg?rule=ad-large",
-        "https://img.leboncoin.fr/api/v1/lbcpb1/images/31/30/f4/3130f484a61e6ec525173e2aa63a23908ca83c55.jpg?rule=ad-large"
-      ],
-      "sold": true
-    },
-    {
       "id": 5,
       "title": "Mercedes-Benz SLK 250 Sport Panorama",
       "address": "Paris",

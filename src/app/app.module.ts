@@ -9,6 +9,8 @@ import {HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { CreateCarComponent } from './components/create-car/create-car.component';
 import { CarDetailsComponent } from './components/car-details/car-details.component';
+import { HomepageComponent } from './components/homepage/homepage.component';
+import { SortByPricePipe } from './pipes/sort-by-price.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { CarDetailsComponent } from './components/car-details/car-details.compon
     NavbarComponent,
     CarsComponent,
     CreateCarComponent,
-    CarDetailsComponent
+    CarDetailsComponent,
+    HomepageComponent,
+    SortByPricePipe,
   ],
   imports: [
     BrowserModule,

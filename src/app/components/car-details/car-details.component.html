@@ -1,5 +1,11 @@
-<div class="container">
-  <h1>Car details</h1>
-  <h1 *ngIf="car"> {{ car.title }}</h1>
+<div *ngIf="car" class="card" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{car.title}}</h5>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Adresse: {{car.address}}</li>
+    <li class="list-group-item">Marque: {{car.brand}}</li>
+    <li class="list-group-item">Model: {{car.model}}</li>
+    <li class="list-group-item">Année model: {{car.model_year}}</li>
+  </ul>
 </div>
-

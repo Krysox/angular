@@ -12,6 +12,6 @@ export interface Car {
   numbers_doors: number,
   horse_power: number,
   price: number,
-  pictures: [],
+  pictures: string[],
   sold: boolean,
 }

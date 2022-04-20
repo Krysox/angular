@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {CarService} from "../../services/car.service";
 import {Car} from "../../models/car";
+import { Router } from "@angular/router"
 
 @Component({
   selector: 'app-cars',
@@ -8,31 +9,24 @@ import {Car} from "../../models/car";
   styleUrls: ['./cars.component.scss']
 })
 export class CarsComponent implements OnInit {
+  @Input()
+  car!:Car;
 
-  cars: Car[] = [];
-
-  constructor(private carService: CarService) { }
+  constructor(private carService: CarService, private router: Router) { }
 
   ngOnInit(): void {
-    this.carService.fetchAll()
-      .subscribe({
-        next: cars => {
-          this.cars = cars;
-        },
-        error: err => {
-          console.log(err);
-        },
-        complete: () => {
-          console.log("completed");
-        }
-      });
-
   }
 
   deleteCar(id: number) {
     this.carService.delete(id)
       .subscribe({
         next: ok => {
+        },
+        error : err => {
+          console.log(err)
+        },
+        complete:() => {
+          this.router.navigate(['/']);
         }
     })
   }
